@@ -143,7 +143,7 @@ const leaf = (cls='leaf') => `<svg class="${cls}" viewBox="0 0 24 24">${LEAF}</s
 /* ---------- 저장소 ----------
    ENDPOINT에 Apps Script 웹앱 주소를 넣으면 구글 드라이브에 저장된다.
    비워두면 이 기기(IndexedDB)에만 저장 — 화면 확인용. */
-const ENDPOINT = '';
+const ENDPOINT = 'https://script.google.com/macros/s/AKfycbxeaoaieK2v9Vu5wZD-GnrM_sdYasK_hkJ-r3V1KySqw0mFZCA9CenowauUdkc2GJKyfQ/exec';
 
 const toBase64 = blob => new Promise(r => { const fr = new FileReader(); fr.onload = () => r(fr.result); fr.readAsDataURL(blob); });
 const byNewest = list => list.sort((a, b) => b.createdAt - a.createdAt);
